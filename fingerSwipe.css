@@ -1,0 +1,25 @@
+/* finger-swipe-animation.css */
+@keyframes swipeLeftAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+
+.finger-swipe-overlay {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(0%, 0%);
+  animation: swipeLeftAnimation 2s forwards ;
+  animation-delay: 0.2s;
+  animation-iteration-count: 3;
+  pointer-events: none;
+  z-index: 9999;
+  
+}
+
